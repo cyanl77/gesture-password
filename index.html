@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gesture</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/c.css">
+</head>
+<body>
+	<header><h1>手势密码</h1></header>
+	<div id="password_input" >
+		<canvas id="background" >您的浏览器不支持canvas</canvas>
+		<canvas id="painting"></canvas>
+		<p id="prompt"></p> <!--这里应根据不同状态显示不同信息，故没有具体文本内容-->
+	</div>
+	<form>
+	<label for="set"><input type="radio" name="action" value="set" checked="checked">设置密码</label><br>
+	<label for="check"><input type="radio" name="action" value="check">验证密码</label>
+	</form>
+
+	<script type="text/javascript" src="scripts/addLoadEvent.js"></script>
+	<script type="text/javascript" src="scripts/initialState.js"></script>
+	<script type="text/javascript" src="scripts/setAndCheck.js"></script>
+	<script type="text/javascript" src="scripts/pointsAction.js"></script>
+</body>
+</html>
